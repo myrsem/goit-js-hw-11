@@ -1,0 +1,141 @@
+body {
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.is-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.search-form {
+  position: relative;
+}
+
+.section {
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightblue;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0px 0px 20px 4px lightblue;
+}
+
+.search-input {
+  font: inherit;
+  padding: 8px;
+  width: 550px;
+  outline: none;
+}
+
+.form-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 38px;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-transform: uppercase;
+  font: inherit;
+  color: aliceblue;
+  background-color: darkgreen;
+  border: none;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+.load-more-btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-transform: uppercase;
+  font: inherit;
+  color: aliceblue;
+  background-color: darkgreen;
+  border: none;
+  border-radius: 5%;
+  cursor: pointer;
+  height: 40px;
+}
+
+.form-btn:hover,
+.form-btn:focus,
+.load-more-btn:hover,
+.load-more-btn:focus {
+  background-color: rgb(4, 126, 4);
+}
+
+.photo-card {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  margin: 10px;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 4px rgb(0 0 0 / 15%);
+}
+
+.photo-card:hover {
+  transform: scale(1.03);
+}
+
+.gallery {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-link {
+  text-decoration: none;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.25s;
+}
+
+.gallery-link:hover,
+.gallery-link:focus {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.16);
+}
+
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.gallery-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
