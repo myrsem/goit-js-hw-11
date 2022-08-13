@@ -36,16 +36,22 @@ body {
 
 .search-input {
   font: inherit;
-  padding: 8px;
+  padding: 0.5rem 1rem 0.5rem 4rem;
   width: 550px;
   outline: none;
+  border: none;
+  background: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-128.png)
+    #ececec;
+  background-repeat: no-repeat;
+  background-position: 1rem 50%;
+  background-size: 2rem;
 }
 
 .form-btn {
   position: absolute;
-  top: 0;
+  top: -1.5;
   right: 0;
-  height: 38px;
+  height: 36px;
   padding-right: 10px;
   padding-left: 10px;
   text-transform: uppercase;
@@ -121,7 +127,7 @@ body {
 
 .gallery-img {
   width: 100%;
-  max-height: 300px;
+  max-height: 220px;
   object-fit: cover;
   display: block;
 }
